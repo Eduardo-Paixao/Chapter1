@@ -15,7 +15,8 @@ module.exports = {
         extensions: ['.js', '.jsx'],
     },
     devServer:{
-        static: './'
+        liveReload: true
+        // contentBase:path.resolve(__dirname, 'public')
     },
     plugins:[
         new HtmlWebpackPlugin({
